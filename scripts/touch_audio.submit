@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+#SBATCH --job-name=contact_localization
+#SBATCH --account=viscam
+#SBATCH --partition=viscam
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=128G
+#SBATCH --gres=gpu:a5000:1
+#SBATCH --cpus-per-task=32
+#SBATCH --time 48:00:00
+#SBATCH --output=exp_new/logs/touch_audio_slurm_%A.out
+#SBATCH --error=exp_new/logs/touch_audio_slurm_%A.err
+#SBATCH --mail-user={your_email}
+#SBATCH --mail-type=ALL
+
+
+######################
+# Begin work section #
+######################
+echo "SLURM_JOBID="$SLURM_JOBID
+echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
+echo "SLURM_NNODES"=$SLURM_NNODES
+echo "SLURMTMPDIR="$SLURMTMPDIR
+echo "working directory = "$SLURM_SUBMIT_DIR
+
+
+python main.py --modality_list touch audio --exp touch_audio

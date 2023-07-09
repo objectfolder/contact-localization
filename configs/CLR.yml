@@ -1,0 +1,3 @@
+vision_checkpoint: "./exp_new/CLR_vision/bst.pth"
+touch_checkpoint: "./exp_new/CLR_touch/bst.pth"
+audio_checkpoint: "./exp_new/CLR_audio/bst.pth"

@@ -1,19 +1,15 @@
-sbatch scripts/audio_mfcc.submit
-sbatch scripts/touch_audio_resnet_none_mfcc.submit
-sbatch scripts/touch_audio_resnet_classification_mfcc.submit
-sbatch scripts/touch_audio_vgg_vision_retrieval_mfcc.submit
-sbatch scripts/touch_audio_vgg_audio_retrieval_mfcc.submit
-# sbatch scripts/touch_resnet_none.submit
-# sbatch scripts/touch_vgg_vision_retrieval.submit
-# sbatch scripts/touch_vgg_audio_retrieval.submit
-# sbatch scripts/touch_resnet_classification.submit
+# sbatch scripts/CLR_vision.submit
+# sbatch scripts/CLR_audio.submit
+# sbatch scripts/CLR_touch.submit
+# sbatch scripts/CLR_vision_touch.submit
+# sbatch scripts/CLR_vision_audio.submit
+# sbatch scripts/CLR_touch_audio.submit
+# sbatch scripts/CLR_vision_touch_audio.submit
 
-sbatch scripts/audio_mfcc_convergence_eval.submit
-sbatch scripts/touch_audio_resnet_none_mfcc_convergence_eval.submit
-sbatch scripts/touch_audio_resnet_classification_mfcc_convergence_eval.submit
-sbatch scripts/touch_audio_vgg_vision_retrieval_mfcc_convergence_eval.submit
-sbatch scripts/touch_audio_vgg_audio_retrieval_mfcc_convergence_eval.submit
-# sbatch scripts/touch_resnet_none_convergence_eval.submit
-# sbatch scripts/touch_vgg_vision_retrieval_convergence_eval.submit
-# sbatch scripts/touch_vgg_audio_retrieval_convergence_eval.submit
-# sbatch scripts/touch_resnet_classification_convergence_eval.submit
+sbatch scripts/CLFDR_vision.submit
+sbatch scripts/CLFDR_audio.submit
+sbatch scripts/CLFDR_touch.submit
+sbatch scripts/CLFDR_vision_touch.submit
+sbatch scripts/CLFDR_vision_audio.submit
+sbatch scripts/CLFDR_touch_audio.submit
+sbatch scripts/CLFDR_vision_touch_audio.submit

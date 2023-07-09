@@ -7,7 +7,7 @@ def build(args):
     val_dataset = retrieval_dataset(args, 'val')
     test_dataset = retrieval_dataset(args, 'test')
     train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True,
-                              num_workers=args.num_workers, collate_fn=train_dataset.collate, drop_last=False)
+                              num_workers=args.num_workers, collate_fn=train_dataset.collate, drop_last=True)
     val_loader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False,
                             num_workers=args.num_workers, collate_fn=val_dataset.collate, drop_last=False)
     test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False,

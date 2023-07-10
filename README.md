@@ -12,17 +12,17 @@ Start the training process, and test the best model on test-set after training:
 
 ```sh
 python main.py --batch_size 8 --modality_list vision touch audio \
-							 --model CLR --weight_decay 1e-2 --lr 5e-4 \
-							 --exp CLR_vision_touch_audio
+               --model CLR --weight_decay 1e-2 --lr 5e-4 \
+			   --exp CLR_vision_touch_audio
 ```
 
 Evaluate the best model in *CLR_vision_touch_audio*:
 
 ```sh
 python main.py --batch_size 8 --modality_list vision touch audio \
-							 --model CLR --weight_decay 1e-2 --lr 5e-4 \
-							 --exp CLR_vision_touch_audio \
-							 --eval
+			   --model CLR --weight_decay 1e-2 --lr 5e-4 \
+			   --exp CLR_vision_touch_audio \
+			   --eval
 ```
 
 #### Add your own model

@@ -6,6 +6,10 @@ More formally, the task can be defined as follows: given a visual patch image V 
 
 ## Usage
 
+#### Data Preparation
+
+The dataset used to train the baseline models can be downloaded from [here](https://www.dropbox.com/scl/fo/rb5yj04v3gg42qtk88ddn/ACLiNBmuujZXKruWNNJ4Ihg?rlkey=vb1anldka1wve3vcwwz5cfe9h&st=wax8ugf2&dl=0)
+
 #### Training & Evaluation
 
 Start the training process, and test the best model on test-set after training:
